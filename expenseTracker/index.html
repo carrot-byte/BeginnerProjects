@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="col1"></div>
+
+    <div class="col2">
+
+        <div class="fixed">
+            <div class="cover"></div>
+            <header>
+                <h1>Expense Tracker</h1>
+                <h4>Add a New Item:</h4>
+            </header>
+            
+        
+            <form>
+                <div class="expenseName">
+                    <b>Name:</b> 
+                    <input class="expenseInput" type="text" placeholder="Where was the expense made?">
+                </div>
+        
+                <div class="dateAmount">
+                    <div class="date">
+                        <b>Date:</b>
+                        <input class="expenseDate" type="date">
+                    </div>
+                    
+                    <div class="amount">
+                        <b>Amount:</b>
+                        <input class="expenseAmount" type="number">
+                    </div>
+                    
+                </div>
+                
+                <button class="addBtn">Add Expense</button>        
+            </form>
+        </div>
+
+        
+    
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+    
+            <tbody class="tableBody"></tbody>
+            
+        </table>
+    </div>
+    
+    <div class="col3"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+                <!-- <tr class="noExpense">
+                    <td colspan="3">No expense added yet!</td>
+                </tr> -->
+
+                <!-- <tr class="expenseRow">
+                    <td class="addedName">lkjd</td>
+                    <td class="addedDate">sdfdsfs</td>
+                    <td class="addedAmount">
+                        lkjl
+                        <button class="crossBtn">x</button>
+                    </td>
+                </tr> -->

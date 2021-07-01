@@ -1,0 +1,156 @@
+/* font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+header{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+header h4{
+    color: rgb(50, 192, 50);
+}
+
+form, table{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+}
+
+.expenseName, .dateAmount{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.date, .amount{
+    display: flex;
+    width: 50%;
+}
+
+.date input, .amount input{
+    width: 100%;
+    margin-left: 10px;
+    font-size: 17px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    outline: none;
+}
+
+.date input{
+    margin-right: 10px;
+}
+
+.expenseName input{
+    width: 100%;
+    margin-left: 10px;
+    font-size: 17px;
+    padding: 6px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    outline: none;
+}
+
+.addBtn{
+    position: relative;
+    left: 50%;          /*only the left side line will be centered */
+    transform: translate(-50%, 0);  /*the buttons 50% will come to the left   */
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(6, 153, 6);
+    border-style: none;
+    border-radius: 3px;
+}
+
+.addBtn:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid rgb(248, 245, 245);
+    margin-top: 18px;
+}
+
+table th{
+    padding: 6px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+table td{
+    padding: 7px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+table thead{
+    background-color: white;
+    position: sticky;
+    top: 280.92px;
+    z-index: 200;   
+}
+
+table tbody{
+    background-color: rgb(248, 245, 245);
+}
+
+.addedAmount{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    transform: translate(0px, 1px);
+}
+
+.addedAmount{
+    border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+.crossBtn{
+    width: 20px;
+    cursor: pointer;
+}
+
+.expenseRow{
+    transition: opacity 0.3s;
+}
+
+.fade{
+    opacity: 0;
+}
+
+.fixed{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.cover{
+    background-color: white;
+    width: 442px;
+    height: 280.5px;
+    position: fixed;
+    z-index: -1;
+}   
